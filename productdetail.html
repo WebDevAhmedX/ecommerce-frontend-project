@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+      
+      }
+      .hover{
+        line-height: 3;
+      }
+
+      .hover:hover{
+        background-color: rgb(100, 192, 254);
+        border-radius: 20px;
+      }
+      .cc{
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Nav -->
+    <div class="container-fluid bg-light ">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <!-- Column 1 -->
+          <div class="col-lg-2">
+            <a class="navbar-brand bi bi-cart-check-fill  fs-3" href="home.html">Brand</a>
+          </div> 
+
+          <!-- (Search Box) -->
+            <div class="col-lg-5">
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-light border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            All category
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Category 1</a></li>
+                            <li><a class="dropdown-item" href="#">Category 2</a></li>
+                            <li><a class="dropdown-item" href="#">Category 3</a></li>
+                        </ul>
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+        
+         
+          <!-- Column 3 (Icons) -->
+          <div class="col-lg-5 text-end">
+            <i class="bi bi-person fs-6 btn  btn-sm"> <br> Profile</i>
+            <i class="bi bi-chat-left-text-fill fs-6 btn  btn-sm"> <br> Message</i>
+            <i class="bi bi-bag-heart fs-6 btn  btn-sm"> <br> Order</i>
+            <i class="bi bi-cart-check-fill fs-6 btn btn-sm"> <br> Cart</i>
+        </div>
+        
+        
+      </div>
+   
+    </div>
+    </div>
+    <div class="container-fluid mt-2 bg-light border border-2 p-3 ">
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex align-items-center justify-content-between gap-4 flex-wrap">
+            
+            <!-- Navigation Links -->
+            <nav class="d-flex align-items-center gap-3 flex-wrap">
+              <a class="nav-link bi bi-list " href="#" >All Categories</a>
+              <a class="nav-link" href="#">Hot Offers</a>
+              <a class="nav-link" href="#">Gift Boxes</a>
+              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#">Main-Menu</a>
+              <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  Help
+                </a>
+                <ul class="dropdown-menu"> 
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                </ul>
+              </div>
+            </nav>
+    
+            <!-- Language,  -->
+            <div class="d-flex align-items-center gap-3 flex-wrap">
+              <label class="m-0">English</label>
+    
+              <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  USD
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">USD</a></li>
+                </ul>
+              </div>
+    
+              <label class="m-0">Ship to</label>
+    
+              <div class="dropdown">
+                <a class="nav-link dropdown-toggle  bi bi-globe" href="#" role="button" data-bs-toggle="dropdown">
+                  
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">IN</a></li>
+                  <li><a class="dropdown-item" href="#">PK</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- filter -->
+<div class="container-fluid">
+    <div class="container">
+      <div class="row">
+    <div class="col-lg-12 d-flex flex-column4  ">
+        
+            <a href="home.html" class="btn ">Home</a>
+            <a href="#" class="btn"><img src="/media/arrow-point-to-right.png" alt="arrow" width="10px" height="10px" >Clothings</a>
+            <a href="#" class="btn"> <img src="/media/arrow-point-to-right.png" alt="arrow" width="10px" height="10px" > Men's Wear</a>
+            <a href="#" class="btn"> <img src="/media/arrow-point-to-right.png" alt="arrow" width="10px" height="10px" > Summer Clothing</a>
+    </div>
+      </div>
+    </div>
+</div>
+<!-- maindetails -->
+ <div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="/media/cloth/1.jpg" alt="">
+                </div>
+                <div class="card-body mt-1 ms-3  ">
+                    <img class="border" src="/media/cloth/2.jpg" alt="" width="40px" height="40px" >
+                    <img class="border" src="/media/cloth/2.jpg" alt=""  width="40px" height="40px"  >
+                    <img class="border" src="/media/cloth/2.jpg" alt=""  width="40px" height="40px"  >
+                    <img class="border" src="/media/cloth/2.jpg" alt=""  width="40px" height="40px"  >
+                    <img class="border" src="/media/cloth/2.jpg" alt=""  width="40px" height="40px"  >
+                    <img class="border" src="/media/cloth/2.jpg" alt=""  width="40px" height="40px"  >
+                </div>
+                
+                </div>
+          
+            <div class="col-lg-4 mt-2 ">
+                <h6 class="bi bi-bookmark-check-fill text-success " >in stock</h6>
+                <h2>Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h2>
+                <div class="rating-details text-warning d-flex">
+                    <i class="bi bi-star-fill" ></i>
+                    <i class="bi bi-star-fill" ></i>
+                    <i class="bi bi-star-fill" ></i>
+                    <i class="bi bi-star-fill" ></i>
+                   <h6 class="ms-3" > 9.3</h6>
+                  <li class="ms-3" >  <i class="bi bi-chat-left-text text-secondary" >32 reviews</i></li>
+                  <li class="ms-3" >  <i class="bi bi-bag text-secondary" >154 sold</i></li>
+                </div>
+                <div class="row bg-warning">
+                    <div class="col-lg-4  mt-3 ">
+                        <h2>$98.00</h2>
+                        <p>50-100 pcs</p>
+                    </div>
+                    <div class="col-lg-4  mt-3 ">
+                        <h2>$90.00</h2>
+                        <p>100-700 pcs</p>
+                    </div>
+                    <div class="col-lg-4  mt-3 ">
+                        <h2>$78.00</h2>
+                        <p>700+ pcs</p>
+                    </div>
+
+                </div>
+                <div class="row mt-3 bg-light ">
+                    
+                        <div class="price  mt-2 ">
+                            <div class="pric-col d-flex">
+                                <h6>Price:</h6>
+                            <li class="ms-auto " >Negotiable</li>
+                            </div>
+                        <hr class="lh-lg" >
+                       <div class="type-col d-flex">
+                        <h6>Type:</h6>
+                        <li class="ms-auto " >Classic Shoes</li>
+                       </div>
+                        <div class="mterial-col  d-flex">
+                            <h6>Material:</h6>
+                        <li class="ms-auto " >Classic Shoes</li>
+                        </div>
+                        <div class="design-col d-flex">
+                            <h6>Design:</h6>
+                        <li class="ms-auto " >Modern nice</li>
+                        </div>
+                        <hr class="lh-lg" >
+                        <div class="Customization d-flex">
+                            <h6>Customization:</h6>
+                        <li class="ms-5" >Customized logo and design custom package</li>
+                        </div>
+                        <div class="Protection-col d-flex">
+                            <h6>Protection:</h6>
+                        <li class="ms-auto " >Refund Policy</li>
+                        </div>
+                        <div class="warranty-col d-flex">
+                            <h6>Warranty:</h6>
+                        <li class="ms-auto " >2 years full warranty</li>
+                        </div>
+                        <hr class="lh-lg" >
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4  ">
+                <div class="row ms-2 ">
+                    <div class="col-lg-12 border border-2 border-radius ">
+                      <div class="person-profile">
+                        <div class="icon d-flex">
+                            <i class="bi bi-person fs-1 border border-radius border-2" ></i>
+                        <h4>Supplier <br>Guanjoi Trading LLC</h4>
+                       
+                        </div>
+                        <hr class="lh-lg" >
+                        <div class="img d-flex ">
+                            <img src="/media/flags/germany.png" alt="" width="50px" height="50" >
+                            <h6 class="mt-3" >Germany,Berlin</h6>
+                        </div>
+                        <div class="img d-flex ">
+                            <i class="bi bi-patch-check-fill fs-2" ></i>
+                            <h6 class="mt-3 ms-3" >Verfied Seller</h6>
+                        </div>
+                        <div class="img d-flex ">
+                            <i class="bi bi-globe fs-2" ></i>
+                            <h6 class="mt-3 ms-3" >Worldwide shipping</h6>
+                        </div>
+                        <div class="inq-btn text-center">
+                            <button class="btn btn-primary btn-lg " >Send Inquiry</button>
+                        </div>
+                        <div class="seller-p-btn text-center mt-2 mb-3"> 
+                            <button class="btn btn-primary btn-lg " >Seller's profile</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <h3 class="bi bi-heart mt-3 text-center text-primary " > save for later</h3>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="continer-fluid mt-5 ">
+    <div class="row">
+
+    
+    <div class="container d-flex">
+        <div class="col-lg-8 ms-5 ">
+            <div class=" d-flex justify-content-between ms-2">
+                <h6 class="text-primary text-decoration-underline" >Description</h6>
+                <h6>Reviews</h6>
+                <h6>Shipping</h6>
+                <h6>About Seller</h6>
+            </div>
+            <hr class="lh-lg" >
+       
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                </p>
+<table class="table table-striped table-bordered mt-3">
+    <tbody >
+<tr>
+    <td>Model</td>
+    <td>#8786867</td>
+  <tr>
+    <td>Style</td>
+    <td>Classic Style</td>
+  </tr>
+  <tr>
+    <td>Certificate</td>
+    <td>ISO-8767676767</td>
+  </tr>
+  <tr>
+    <td>Size</td>
+    <td>34mm x 450mm x 19mm</td>
+  </tr>
+  <tr>
+    <td>Memory</td>
+    <td>36 GB RAM</td>
+  </tr>
+    
+</tr>
+    </tbody>
+</table>
+
+<div class="detais-feature">
+    <div class="row mt-3">
+        <div class="f d-flex ">
+            <i class="bi bi-check fs-2" ></i>
+            <h6 class="mt-3" >Some great feature name here</h6>
+        </div>
+        <div class="f  d-flex ">
+            <i class="bi bi-check fs-2" ></i>
+            <h6 class="mt-3" >Lorem ipsum dolor sit amet, consectetur </h6>
+        </div>
+        <div class="f  d-flex ">
+            <i class="bi bi-check fs-2" ></i>
+            <h6 class="mt-3" >Duis aute irure dolor in reprehenderit</h6>
+        </div>
+        <div class="f d-flex ">
+            <i class="bi bi-check fs-2" ></i>
+            <h6 class="mt-3" >Some great feature name here</h6>
+        </div>
+    </div>
+</div>
+            </div>
+<div class="col-lg-2  border ms-5 p-3">
+    <div class="row">
+        <h4>You may like</h4>
+        <div class="card">
+           <div class="img-title d-flex ">
+            <img src="/media/cloth/1.jpg" alt="img" width="50px" height="50px" >
+            <h5>Men Blazers Sets Elegant Formal</h5>
+           </div>
+           <p class="ms-5" >$7.00 - $99.50</p>
+    </div>
+    </div>
+    <div class="row mt-2 ">
+        <div class="card">
+           <div class="img-title d-flex ">
+            <img src="/media/cloth/2.jpg" alt="img" width="50px" height="50px" >
+            <h5>Men Blazers Sets Elegant Formal</h5>
+           </div>
+           <p class="ms-5" >$7.00 - $99.50</p>
+    </div>
+</div>
+<div class="row mt-2 ">
+    <div class="card">
+       <div class="img-title d-flex ">
+        <img src="/media/cloth/2.jpg" alt="img" width="50px" height="50px" >
+        <h5>Men Blazers Sets Elegant Formal</h5>
+       </div>
+       <p class="ms-5" >$7.00 - $99.50</p>
+</div>
+</div>
+<div class="row mt-2 ">
+    <div class="card">
+       <div class="img-title d-flex ">
+        <img src="/media/cloth/1.jpg" alt="img" width="50px" height="50px" >
+        <h5>Men Blazers Sets Elegant Formal</h5>
+       </div>
+       <p class="ms-5" >$7.00 - $99.50</p>
+</div>
+</div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</div>
+ </div>
+
+ <div class="relatedpost mt-5">
+    <div class="container-fluid">
+        <div class="container bg-light">
+            <h2>Related Post</h2>
+            <div class="row p-4 ">
+                <div class="col-lg-2 border">
+                    <img src="/media/cloth/1.jpg" alt="" width="100px" height="100px">
+                    <h6>Men Blazers Sets Elegant Formal</h6>
+                    <p>$32.00-$40.00</p>
+                </div>
+                <div class="col-lg-2 border">
+                    <img src="/media/cloth/2.jpg" alt="" width="100px" height="100px">
+                    <h6>Men Blazers Sets Elegant Formal</h6>
+                    <p>$32.00-$40.00</p>
+                </div>
+                <div class="col-lg-2 border">
+                    <img src="/media/cloth/3.jpg" alt="" width="100px" height="100px">
+                    <h6>Men Blazers Sets Elegant Formal</h6>
+                    <p>$32.00-$40.00</p>
+                </div>
+                <div class="col-lg-2 border">
+                    <img src="/media/cloth/5.jpg" alt="" width="100px" height="100px">
+                    <h6>Men Blazers Sets Elegant Formal</h6>
+                    <p>$32.00-$40.00</p>
+                </div>
+                <div class="col-lg-2 border">
+                    <img src="/media/cloth/4.jpg" alt="" width="100px" height="100px">
+                    <h6>Men Blazers Sets Elegant Formal</h6>
+                    <p>$32.00-$40.00</p>
+                </div>
+                <div class="col-lg-2 border">
+                    <img src="/media/cloth/6.jpg" alt="" width="100px" height="100px">
+                    <h6>Men Blazers Sets Elegant Formal</h6>
+                    <p>$32.00-$40.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <div class="banner mt-3 ">
+    <div class="container-fluid">
+        <div class="container bg-primary p-4 d-flex ">
+           <div class="row">
+            <div class="col-lg-12 text-white d-flex ms-auto ">
+                <div class="details ">
+                    <h2>Super discount on more than 100 USD</h2>
+                    <p>Have you ever finally just write dummy info</p>
+                </div>
+                <div class="btn   ">
+                    <a href="#" class="btn btn-light">Shop Now</a>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+ </div>
+          <!-- Subscribe -->
+<div class="continer-fluid mt-5 ">
+  <div class="container">
+    <div class="row p-5 text-center bg-light ">
+      <h2>Subscribe on Our Newsletter</h2>
+      <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+      <div class="inputform">
+        <input class="bi bi-mai "  type="text" name="Subscribe" id="Subscribe" placeholder="Enter Mail">
+        <button class="btn btn-primary" >Send</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+           
+          
+ 
+
+
+     <!-- Footer -->
+     <div class="footer mt-5 ">
+        <div class="container-fluid mt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2">
+                <a href="" class="navbar-brand bi bi-cart-check-fill fs-3 "> Brand</a>
+             <p>Best information about the company gies here but now lorem ipusm</p>
+             <i class="bi bi-facebook " ></i>
+             <i class="bi bi-twitter " ></i>
+             <i class="bi bi-linkedin" ></i>
+             <i class="bi bi-instagram" ></i>
+             <i class="bi bi-youtube" ></i>
+              </div>
+              <div class="col-lg-2 mt-2 ">
+                <h5>About</h5>
+  
+                <a href="" class="nav-link" >About Us</a>
+                <a href="" class="nav-link" >Find Store</a>
+                <a href="" class="nav-link" >Categories</a>
+                <a href="" class="nav-link" >Blogs</a>
+              </div>
+              <div class="col-lg-2 mt-2 ">
+                <h5>Partnership</h5>
+  
+                <a href="" class="nav-link" >About Us</a>
+                <a href="" class="nav-link" >Find Store</a>
+                <a href="" class="nav-link" >Categories</a>
+                <a href="" class="nav-link" >Blogs</a>
+              </div>
+              <div class="col-lg-2 mt-2 ">
+                <h5>information</h5>
+  
+                <a href="" class="nav-link" >Help Center</a>
+                <a href="" class="nav-link" >Money refund</a>
+                <a href="" class="nav-link" >Shipping</a>
+                <a href="" class="nav-link" >Contact Us</a>
+              </div>
+              <div class="col-lg-2 mt-2 ">
+                <h5>For User</h5>
+  
+                <a href="" class="nav-link" >Login</a>
+                <a href="" class="nav-link" >Register</a>
+                <a href="" class="nav-link" >Setting</a>
+                <a href="" class="nav-link" >My Order</a>
+              </div>
+              <div class="col-lg-2 mt-2 ">
+                <h5>Get App</h5>
+                <button class="btn btn-light h6 bg-dark text-white " >Download on the <br>App Store</button>
+                <button class="btn btn-light h6 bg-dark text-white" >Get It On <br><img src="/media/playstore.png " alt="playstore" width="20px" >Google Play</button>
+              </div>
+            </div>
+            <div class="row d-flex bg-light justify-content-center mt-5 p-3">
+              <div class="container-fluid d-flex ">
+               <div class="col-lg-6">
+                <h6>&copy;2025 Ecommerce.</h6>
+               </div>
+                 
+               <div class="col-lg-6  ">
+                <h6 class="text-end" ><img src="/media/flags/usa.png" alt="usa" width="25px" >English <i class="bi bi-arrow-down-square-fill"></i> </h6>
+               </div>
+              </div>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

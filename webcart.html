@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web-cart</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+      
+      }
+      .hover{
+        line-height: 3;
+      }
+
+      .hover:hover{
+        background-color: rgb(100, 192, 254);
+        border-radius: 20px;
+      }
+      .cc{
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Nav -->
+    <div class="container-fluid bg-light ">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <!-- Column 1 -->
+          <div class="col-lg-2">
+            <a class="navbar-brand bi bi-cart-check-fill  fs-3" href="home.html">Brand</a>
+          </div> 
+
+          <!-- (Search Box) -->
+            <div class="col-lg-5">
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-light border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            All category
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Category 1</a></li>
+                            <li><a class="dropdown-item" href="#">Category 2</a></li>
+                            <li><a class="dropdown-item" href="#">Category 3</a></li>
+                        </ul>
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+        
+         
+          <!-- Column 3 (Icons) -->
+          <div class="col-lg-5 text-end">
+            <i class="bi bi-person fs-6 btn  btn-sm"> <br> Profile</i>
+            <i class="bi bi-chat-left-text-fill fs-6 btn  btn-sm"> <br> Message</i>
+            <i class="bi bi-bag-heart fs-6 btn  btn-sm"> <br> Order</i>
+            <i class="bi bi-cart-check-fill fs-6 btn btn-sm"> <br> Cart</i>
+        </div>
+        
+        
+      </div>
+   
+    </div>
+    </div>
+
+
+
+<!-- maindetails -->
+<div class="container-fluid mt-5 ">
+    <h4 class="ms-5" >My Cart</h4>
+    <div class="container d-flex">
+       
+        <div class="row  ">
+    <div class="col-lg-8 bg-light d-flex border">
+        <div class="img d-flex mt-2">
+            <img class="border border-2" src="/media/cloth/1.jpg" alt="img" width="100px" height="100px">
+            <div class="details ms-2">
+                <h4>T-shirts with multiple colors, for men and lady</h4>
+            <p>Size:medium, Color:blue, Material:Plastic <br>
+            Seller:Artel Market</p>
+            </div>
+        </div>
+        <div class="price & quantity ms-5 mt-2">
+            <p>Price: $20.00</p>
+            <select name="qty" id="qty" class="form-select">
+                <option value="1">1</option>
+                <option value="1">12</option>
+                <option value="1">24</option>
+            </select>
+        </div>
+        <hr class="lh-lg">
+    </div>
+    <div class="col-lg-8 bg-light d-flex border ">
+        <div class="img d-flex mt-2">
+            <img class="border border-2" src="/media/cloth/1.jpg" alt="img" width="100px" height="100px">
+            <div class="details ms-2">
+                <h4>T-shirts with multiple colors, for men and lady</h4>
+            <p>Size:medium, Color:blue, Material:Plastic <br>
+            Seller:Artel Market</p>
+            </div>
+        </div>
+        <div class="price & quantity ms-5 mt-2">
+            <p>Price: $20.00</p>
+            <select name="qty" id="qty" class="form-select">
+                <option value="1">1</option>
+                <option value="1">12</option>
+                <option value="1">24</option>
+            </select>
+        </div>
+        
+    </div>
+    <div class="col-lg-8 bg-light d-flex border ">
+        <div class="img d-flex mt-2">
+            <img class="border border-2" src="/media/cloth/1.jpg" alt="img" width="100px" height="100px">
+            <div class="details ms-2">
+                <h4>T-shirts with multiple colors, for men and lady</h4>
+            <p>Size:medium, Color:blue, Material:Plastic <br>
+            Seller:Artel Market</p>
+            </div>
+        </div>
+        <div class="price & quantity ms-5 mt-2">
+            <p>Price: $20.00</p>
+            <select name="qty" id="qty" class="form-select">
+                <option value="1">1</option>
+                <option value="1">12</option>
+                <option value="1">24</option>
+            </select>
+        </div>
+        <hr class="lh-lg">
+    </div>
+    <div class="btn bg-light d-flex ">
+        <button class="btn " >Back to shop</button>
+        <button class=" btn text-primary ms-auto" >Remove all</button>
+    </div>
+    <!-- feature -->
+<div class="feature mt-4 bg-light d-flex justify-content-between  ">
+<div class="details mt-2">
+    <h6 class="bi bi-lock-fill fs-5 bg-light" >Secure Payment</h6>
+    <p>Have you ever finally just</p>
+</div>
+<div class="details mt-2 ">
+    <h6 class="bi bi-chat fs-4 bg-light" >Customer Support</h6>
+    <p>Have you ever finally just</p>
+</div>
+<div class="details mt-2 ">
+    <h6 class="bi bi-truck fs-4 bg-light" >Free Delivery</h6>
+    <p>Have you ever finally just</p>
+</div>
+</div>
+        </div>
+        <!-- Coupan side -->
+    <div class="col-lg-4">
+       <div class="row p-2 bg-light ">
+        <div class="col-lg-12">
+            <h3>Have a coupen code?</h3>
+            <button class="btn text-primary d-flex border" >
+                <input type="text" class="form-control fw-bold " id="coupen" placeholder="Add Coupen"> <strong>Apply</strong>
+            </button>
+        </div>
+       </div>
+       <div class="col-lg-12 ms-auto mt-3 bg-light p-2 " >
+        <div class="info d-flex ">
+            <h5>Subtotal:</h5>
+            <h5 class="ms-auto" >$1403.97</h5>
+        </div>
+        <div class="discount d-flex ">
+            <h5>Discount:</h5>
+            <h5 class="ms-auto text-danger " >-$60.00</h5>
+        </div>
+        <div class="text d-flex ">
+            <h5>Tax:</h5>
+            <h5 class="ms-auto text-success " >+$14.00</h5>
+        </div>
+        <hr class="lh-lg" >
+        <div class="total d-flex ">
+            <h5>Total:</h5>
+            <h5 class="ms-auto" >$1357.97</h5>
+        </div>
+        <button class="btn btn-success btn-lg w-100" >Checkout</button>
+        <div class="paymentico fs-1 text-center">
+        <img class="border" src="/media/payment ico/1.png" alt="paypal"width="30px" height="30px">
+        <img class="border" src="/media/payment ico/2.png" alt="paypal"width="30px" height="30px">
+        <img class="border" src="/media/payment ico/3.png" alt="paypal"width="30px" height="30px">
+        <img class="border" src="/media/payment ico/4.png" alt="paypal"width="30px" height="30px">
+        
+        </div>
+    </div>
+    </div>
+</div>
+ </div>
+<!-- Saved For Later -->
+ <div class="saveforlater mt-5">
+    <div class="container-fluid">
+        <div class="container bg-light mt-3">
+            <h2>Saved For Later</h2>
+            <div class="row p-4 gap-5 ms-auto">
+                <div class="col-lg-2 border">
+                    <img class="img-fluid" src="/media/tech/1.jpg" alt="img">
+                    <h6>Men Blazers Sets Elegant Formal</h6>
+                    <p>$32.00-$40.00</p>
+                </div>
+                <div class="col-lg-2 border">
+                    <img class="img-fluid" src="/media/tech/2.jpg" alt="img">
+                    <h6>Men Blazers Sets Elegant Formal</h6>
+                    <p>$32.00-$40.00</p>
+                </div>
+                <div class="col-lg-2 border">
+                    <img class="img-fluid" src="/media/tech/3.jpg" alt="img">
+                    <h6>Men Blazers Sets Elegant Formal</h6>
+                    <p>$32.00-$40.00</p>
+                </div>
+                <div class="col-lg-2 border">
+                    <img class="img-fluid" src="/media/tech/4.jpg" alt="img" >
+                    <h6>Men Blazers Sets Elegant Formal</h6>
+                    <p>$32.00-$40.00</p>
+                </div>
+                <div class="col-lg-2 border">
+                    <img class="img-fluid" src="/media/tech/2.jpg" alt="img">
+                    <h6>Men Blazers Sets Elegant Formal</h6>
+                    <p>$32.00-$40.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <div class="banner mt-3 ">
+    <div class="container-fluid">
+        <div class="container bg-primary p-4 d-flex ">
+           <div class="row">
+            <div class="col-lg-12 text-white d-flex ms-auto ">
+                <div class="details ">
+                    <h2>Super discount on more than 100 USD</h2>
+                    <p>Have you ever finally just write dummy info</p>
+                </div>
+                <div class="btn   ">
+                    <a href="#" class="btn btn-light">Shop Now</a>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+ </div>
+          <!-- Subscribe -->
+<div class="continer-fluid mt-5 ">
+  <div class="container">
+    <div class="row p-5 text-center bg-light ">
+      <h2>Subscribe on Our Newsletter</h2>
+      <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+      <div class="inputform">
+        <input class="bi bi-mai "  type="text" name="Subscribe" id="Subscribe" placeholder="Enter Mail">
+        <button class="btn btn-primary" >Send</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+           
+          
+ 
+
+
+     <!-- Footer -->
+     <div class="footer mt-5 ">
+        <div class="container-fluid mt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2">
+                <a href="" class="navbar-brand bi bi-cart-check-fill fs-3 "> Brand</a>
+             <p>Best information about the company gies here but now lorem ipusm</p>
+             <i class="bi bi-facebook " ></i>
+             <i class="bi bi-twitter " ></i>
+             <i class="bi bi-linkedin" ></i>
+             <i class="bi bi-instagram" ></i>
+             <i class="bi bi-youtube" ></i>
+              </div>
+              <div class="col-lg-2 mt-2 ">
+                <h5>About</h5>
+  
+                <a href="" class="nav-link" >About Us</a>
+                <a href="" class="nav-link" >Find Store</a>
+                <a href="" class="nav-link" >Categories</a>
+                <a href="" class="nav-link" >Blogs</a>
+              </div>
+              <div class="col-lg-2 mt-2 ">
+                <h5>Partnership</h5>
+  
+                <a href="" class="nav-link" >About Us</a>
+                <a href="" class="nav-link" >Find Store</a>
+                <a href="" class="nav-link" >Categories</a>
+                <a href="" class="nav-link" >Blogs</a>
+              </div>
+              <div class="col-lg-2 mt-2 ">
+                <h5>information</h5>
+  
+                <a href="" class="nav-link" >Help Center</a>
+                <a href="" class="nav-link" >Money refund</a>
+                <a href="" class="nav-link" >Shipping</a>
+                <a href="" class="nav-link" >Contact Us</a>
+              </div>
+              <div class="col-lg-2 mt-2 ">
+                <h5>For User</h5>
+  
+                <a href="" class="nav-link" >Login</a>
+                <a href="" class="nav-link" >Register</a>
+                <a href="" class="nav-link" >Setting</a>
+                <a href="" class="nav-link" >My Order</a>
+              </div>
+              <div class="col-lg-2 mt-2 ">
+                <h5>Get App</h5>
+                <button class="btn btn-light h6 bg-dark text-white " >Download on the <br>App Store</button>
+                <button class="btn btn-light h6 bg-dark text-white" >Get It On <br><img src="/media/playstore.png " alt="playstore" width="20px" >Google Play</button>
+              </div>
+            </div>
+            <div class="row d-flex bg-light justify-content-center mt-5 p-3">
+              <div class="container-fluid d-flex ">
+               <div class="col-lg-6">
+                <h6>&copy;2025 Ecommerce.</h6>
+               </div>
+                 
+               <div class="col-lg-6  ">
+                <h6 class="text-end" ><img src="/media/flags/usa.png" alt="usa" width="25px" >English <i class="bi bi-arrow-down-square-fill"></i> </h6>
+               </div>
+              </div>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
